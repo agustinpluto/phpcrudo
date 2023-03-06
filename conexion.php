@@ -1,9 +1,13 @@
 <?php
 
-$con = mysqli_connect("localhost", "agustin", "Ireliagod1!", "apirest");
+$servername = "localhost";
+$username = "agustin";
+$password = "Ireliagod1!";
+$dbname = "apirest";
 
-if (!$con) {
-    die("Error de conexión: " . mysqli_connect_error());
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+    die("La conexión a la base de datos falló: " . mysqli_connect_error());
 }
 
 ?>
