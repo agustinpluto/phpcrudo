@@ -4,7 +4,7 @@ $nombre = $_GET["nombre"];
 $apellido = $_GET["apellido"];
 $dni = $_GET["dni"];
 $email = $_GET["email"];
-$contrasena = $_GET["contrasena"];
+$contrasena = $_GET["password"];
 
 require(conexion.php);
 
